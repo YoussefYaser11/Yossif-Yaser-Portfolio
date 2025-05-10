@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yossif Yaser | معرض اعمال التصميمات</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/styles/vendors/bootstrap.rtl.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="assets/styles/style.css" />
+    <link rel="stylesheet" type="text/css" href="assets/styles/style-rtl.css" />
+    <link rel="stylesheet" href="assets/styles/all.css" />
+    <link
+      rel="shortcut icon"
+      href="images/IMG-20240228-WA0059.jpg"
+      type="image/x-icon"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+
+      body {
+        background-color: #121212;
+        padding: 20px;
+        color: #e0e0e0;
+      }
+
+      .gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 20px;
+        margin: 20px 0;
+      }
+
+      .card {
+        background-color: #1e1e1e;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        cursor: pointer;
+        transition: transform 0.3s ease;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+      }
+
+      .card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        display: block;
+      }
+
+      .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.95);
+        z-index: 1000;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .modal-content {
+        max-width: 90%;
+        max-height: 90%;
+      }
+
+      .modal img {
+        max-width: 100%;
+        max-height: 90vh;
+        object-fit: contain;
+      }
+
+      .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        color: #e0e0e0;
+        font-size: 30px;
+        cursor: pointer;
+        background-color: rgba(60, 60, 60, 0.7);
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .close-btn:hover {
+        background-color: rgba(80, 80, 80, 0.9);
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+
+      .header h1 {
+        font-size: 2.5rem;
+        color: #e0e0e0;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <section class="order section__spacing text-center reveal">
+      <div class="container">
+        <div class="content">
+          <a href="index.html" class="btn">العوده للصفحه الرئيسيه</a>
+        </div>
+      </div>
+    </section>
+    <h1 class="title title--h1 title__separate">معرض الاعمال</h1>
+    <div class="gallery">
+      <!-- تكرار البطاقات لكل صورة في المعرض -->
+      <div class="card">
+        <img src="images/myDesign/1 (2).png" alt="تصميم 1" />
+      </div>
+      <div class="card">
+        <img src="images/myDesign/2 (2).png" alt="تصميم 2" />
+      </div>
+      <div class="card">
+        <img src="images/myDesign/1.png" alt="تصميم 3" />
+      </div>
+      <div class="card">
+        <img src="images/myDesign/1(1).png" alt="تصميم 4" />
+      </div>
+      <div class="card">
+        <img src="images/myDesign/2(1).png" alt="تصميم 5" />
+      </div>
+      <div class="card">
+        <img src="images/myDesign/2.png" alt="تصميم 6" />
+      </div>
+      <div class="card">
+        <img src="images/myDesign/3.png" alt="تصميم 7" />
+      </div>
+      <div class="card">
+        <img src="images/myDesign/4.png" alt="تصميم 8" />
+      </div>
+      <div class="card">
+        <img src="images/myDesign/5.png" alt="تصميم 9" />
+      </div>
+      <div class="card">
+        <img src="images/myDesign/adsfa.png" alt="تصميم 10" />
+      </div>
+      <div class="card">
+        <img
+          src="images/myDesign/Black White Elegant Illustrated Signature Photography Logo.png"
+          alt="تصميم 11"
+        />
+      </div>
+      <div class="card">
+        <img
+          src="images/myDesign/Blue and Pink Soft Magazine Cover Mockup Instagram Post (1).png"
+          alt="تصميم 12"
+        />
+      </div>
+      <div class="card">
+        <img
+          src="images/myDesign/Blue and Pink Soft Magazine Cover Mockup Instagram Post.png"
+          alt="تصميم 13"
+        />
+      </div>
+      <div class="card">
+        <img
+          src="images/myDesign/Blue color and modern smart wacth instagram post.png"
+          alt="تصميم 14"
+        />
+      </div>
+      <div class="card">
+        <img
+          src="images/myDesign/Blue Modern Dance Channel Youtube Banner.png"
+          alt="تصميم 15"
+        />
+      </div>
+    </div>
+    <section class="order section__spacing text-center reveal">
+      <div class="container">
+        <div class="content">
+          <h2 class="heading mb-2 font-family-bold">
+            أطلب التصميم الخاص بك الان
+          </h2>
+          <a href="https://wa.link/6zoz9a" class="btn">اتصل الان</a>
+        </div>
+      </div>
+    </section>
+    <!-- النافذة المنبثقة لعرض الصورة بحجم كامل -->
+    <div class="modal" id="imageModal">
+      <span class="close-btn">&times;</span>
+      <div class="modal-content">
+        <img id="modalImage" src="" alt="صورة كبيرة" />
+      </div>
+    </div>
+
+    <script>
+      // استهداف جميع البطاقات في المعرض
+      const cards = document.querySelectorAll(".card");
+      const modal = document.getElementById("imageModal");
+      const modalImg = document.getElementById("modalImage");
+      const closeBtn = document.querySelector(".close-btn");
+
+      // إضافة مستمع حدث لكل بطاقة
+      cards.forEach((card) => {
+        card.addEventListener("click", function () {
+          const img = this.querySelector("img");
+          modal.style.display = "flex";
+          modalImg.src = img.src;
+          modalImg.alt = img.alt;
+        });
+      });
+
+      // إغلاق النافذة المنبثقة عند النقر على زر الإغلاق
+      closeBtn.addEventListener("click", function () {
+        modal.style.display = "none";
+      });
+
+      // إغلاق النافذة المنبثقة عند النقر خارج الصورة
+      modal.addEventListener("click", function (event) {
+        if (event.target === modal) {
+          modal.style.display = "none";
+        }
+      });
+    </script>
+  </body>
+</html>
